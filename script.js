@@ -5,7 +5,7 @@ function getComputerChoice() {
 	const randomIndex = Math.floor(Math.random() * signs.length);
 	return signs[randomIndex];
 }
-console.log(getComputerChoice());
+
 function playRound(playerSelection, computerSelection) {
 	playerSelection.toLowerCase();
 	computerSelection.toLowerCase();
@@ -28,15 +28,21 @@ function playRound(playerSelection, computerSelection) {
 	if (tempComputer < computerPoints) return 'Computer wins the round';
 	else if (tempPlayer < playerPoints) return 'Player wins the round';
 }
-const playerSelection = prompt(
-	'Write down your selection between rock, paper and scissors!'
-);
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+let playerSelection;
+let computerSelection;
+
 function game() {
 	for (let i = 0; i < 5; i++) {
+		playerSelection = prompt(
+			'Write down your selection between rock, paper and scissors!'
+		);
+		computerSelection = getComputerChoice();
 		playRound(playerSelection, computerSelection);
+		console.log(`Player :${playerSelection} Computer : ${computerSelection}`);
 	}
+	console.log(`Player :${playerPoints} Computer : ${computerPoints}`);
 	if (computerPoints < playerPoints) return 'Congratulations, you win!';
 	else return 'Better luck next time!';
 }
+
+console.log(game());
