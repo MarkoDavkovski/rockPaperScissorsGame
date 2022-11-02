@@ -39,8 +39,10 @@ function game() {
 		computerSelection = getComputerChoice();
 		playRound(playerSelection, computerSelection);
 		console.log(`Player :${playerSelection} Computer : ${computerSelection}`);
+		console.log(`Player :${playerPoints} Computer : ${computerPoints}`);
+		if (playerSelection === computerSelection) i--;
 	}
-	console.log(`Player :${playerPoints} Computer : ${computerPoints}`);
+
 	if (computerPoints < playerPoints) return 'Congratulations, you win!';
 	else return 'Better luck next time!';
 }
