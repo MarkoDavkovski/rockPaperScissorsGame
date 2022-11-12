@@ -18,7 +18,7 @@ body {
 	gap: 25px;
 	margin-top: 30px;
 }
-.btn {
+.btnSign {
 	font-size: 50px;
 	height: 100px;
 	width: 100px;
@@ -36,4 +36,33 @@ body {
 p {
 	margin: 10px auto;
 	font-size: 30px;
+}
+.scoreSection {
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+.scoreInfo {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.signsContainer {
+	display: flex;
+	justify-content: center;
+	gap: 35px;
+}
+.playerSign,
+.computerSign {
+	font-size: 100px;
+}
+.computerScore,
+.playerScore {
+	font-size: 25px;
+}
+.scoreSignContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }

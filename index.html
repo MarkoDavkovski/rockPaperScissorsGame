@@ -12,12 +12,34 @@
 			<h1>Rock Paper Scissors</h1>
 			<h2>Beat the computer if you can!</h2>
 		</header>
-		<p>Choose your sign</p>
-		<div class="btnContainer">
-			<div class="sign"><button class="btn" id="rock">✊🏼</button></div>
-			<div class="sign"><button class="btn" id="paper">✋🏼</button></div>
-			<div class="sign"><button class="btn" id="scissors">✌🏼</button></div>
+		<p style="font-weight: bold">Choose your sign</p>
+		<div class="scoreSection">
+			<h2 class="scoreInfo">First to score 5 points wins the game!</h2>
+			<div class="signsContainer">
+				<div class="scoreSignContainer">
+					<div class="playerSign">❔</div>
+					<div class="playerScore">Player: 0</div>
+				</div>
+
+				<div class="scoreSignContainer">
+					<div class="computerSign">❔</div>
+					<div class="computerScore">Computer: 0</div>
+				</div>
+			</div>
 		</div>
+
+		<div class="btnContainer">
+			<div class="sign">
+				<button class="btnSign" id="rock">✊🏼</button>
+			</div>
+			<div class="sign">
+				<button class="btnSign" id="paper">✋🏼</button>
+			</div>
+			<div class="sign">
+				<button class="btnSign" id="scissors">✌🏼</button>
+			</div>
+		</div>
+
 		<script src="script.js"></script>
 	</body>
 </html>
