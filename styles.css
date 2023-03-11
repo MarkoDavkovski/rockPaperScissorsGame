@@ -10,6 +10,18 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+.home-icon {
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	color: rgb(252, 252, 252);
+	cursor: pointer;
+}
+.home-icon:hover .fa-sharp {
+	transition: all 0.6s;
+	transform: rotate(360deg) scale(1.2);
+	color: rgb(58, 58, 58);
+}
 .btnContainer {
 	display: flex;
 	flex-direction: row;
